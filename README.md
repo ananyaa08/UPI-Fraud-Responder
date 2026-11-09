@@ -1,5 +1,8 @@
 # UPI Fraud First Responder
 
+##  Live Demo
+Try the application here: [UPI Fraud Responder](https://ananyaa08-upi-fraud-responder-app-0w9ket.streamlit.app/)
+
 Focused first-responder chatbot for UPI / online payment fraud in India. Hybrid pipeline:
 regex + optional LLM extraction -> regex validation -> TF-IDF category match -> triage + report built from a
 hand-written knowledge base (`kb.py`). The LLM never writes legal advice.

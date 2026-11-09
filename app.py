@@ -1,8 +1,15 @@
 import streamlit as st
 from dotenv import load_dotenv
+import os
 
 load_dotenv()
+from dotenv import load_dotenv
 
+# Load secrets from Streamlit Cloud
+try:
+    os.environ.update(dict(st.secrets))
+except FileNotFoundError:
+    pass
 from core import Case, respond, llm_status  # noqa: E402  (after load_dotenv so env is set)
 import kb  # noqa: E402
 
