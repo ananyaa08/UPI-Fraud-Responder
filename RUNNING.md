@@ -2,7 +2,14 @@
 
 An AI-powered UPI fraud detection and first-response assistance application built using Python, Streamlit, and Google's Gemini API.
 
-## Overview
+## 🚀 Live Application
+
+**Try the application here:**
+
+[UPI Fraud Responder – Open Live App](https://ananyaa08-upi-fraud-responder-app-0w9ket.streamlit.app/)
+
+
+## 1. Project Overview
 
 UPI Fraud Responder is designed to assist users in identifying potential UPI-related fraud incidents and understanding appropriate first-response actions.
 
@@ -10,7 +17,7 @@ The application processes user-provided incident details, extracts relevant info
 
 It combines rule-based processing with Large Language Model (LLM) capabilities to make incident analysis more accessible and organized.
 
-## Key Features
+## 2. Key Features
 
 - **Fraud Incident Analysis:** Processes user-provided descriptions of suspected UPI fraud.
 - **Information Extraction:** Identifies relevant incident details using Gemini API.
@@ -19,7 +26,7 @@ It combines rule-based processing with Large Language Model (LLM) capabilities t
 - **Knowledge Base Integration:** Uses a knowledge base to support relevant responses.
 - **Interactive Interface:** Provides a user-friendly interface through Streamlit.
 
-## Technology Stack
+## 3. Technology Stack
 
 | Category | Technologies |
 |---|---|
@@ -30,7 +37,7 @@ It combines rule-based processing with Large Language Model (LLM) capabilities t
 | Configuration | Python dotenv |
 | Version Control | Git and GitHub |
 
-## Project Structure
+## 4. Project Structure
 
 ```text
 upi-first-responder/
@@ -50,44 +57,60 @@ upi-first-responder/
 └── SOLUTION_DOC.md        # Solution documentation
 ```
 
-## Installation and Setup
+## 5. Prerequisites
 
-### Prerequisites
+Before running the application locally, make sure you have installed:
 
 - Python 3.10 or later
 - Git
+- Visual Studio Code (recommended)
 - Google Gemini API key (for LLM functionality)
 
-### 1. Clone the Repository
+## 6. Installation and Setup
+
+### Step 1: Clone the Repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
-cd upi-first-responder
+git clone https://github.com/ananyaa08/UPI-Fraud-Responder.git
 ```
 
-### 2. Create a Virtual Environment
+Navigate into the project directory:
+
+```bash
+cd UPI-Fraud-Responder
+```
+
+### Step 2: Create a Virtual Environment
 
 ```bash
 python -m venv .venv
 ```
 
-Activate it on Windows:
+Activate the environment on Windows:
+
+**PowerShell:**
 
 ```powershell
-.venv\Scripts\activate
+.\.venv\Scripts\Activate.ps1
 ```
 
-### 3. Install Dependencies
+**Command Prompt:**
+
+```cmd
+.venv\Scripts\activate.bat
+```
+
+### Step 3: Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Configure Environment Variables
+### Step 4: Configure Environment Variables
 
-Create a `.env` file using `.env.example` as a template.
+Create a `.env` file in the project root directory using `.env.example` as a template.
 
-Configure the following variables:
+Add the following configuration:
 
 ```env
 LLM_PROVIDER=gemini
@@ -99,52 +122,59 @@ Get your Gemini API key from:
 
 https://aistudio.google.com/apikey
 
+Replace `YOUR_GEMINI_API_KEY` with your actual API key.
+
 **Security:** Never upload your `.env` file or expose your API key publicly.
 
-### 5. Run the Application
+### Step 5: Run the Application
+
+Start the Streamlit application:
 
 ```bash
 streamlit run app.py
 ```
 
-Open the application in your browser at:
+The application will open in your default web browser.
+
+If it does not open automatically, visit:
 
 http://localhost:8501
 
-For detailed instructions, refer to [RUNNING.md](RUNNING.md).
+## 7. Running Tests
 
-## Running Tests
-
-Execute the test suite using:
+Execute the available test suite using:
 
 ```bash
 python run_tests.py
 ```
 
-## Version Control
+## 8. Stopping the Application
 
-This project is maintained using Git and GitHub.
+To stop the local Streamlit server, press:
 
-The repository contains the application source code, documentation, dependencies, and test files.
-
-To get the latest version:
-
-```bash
-git pull origin main
+```text
+Ctrl + C
 ```
 
-## Future Improvements
+## 9. Troubleshooting
 
-- Improve fraud incident classification.
-- Expand the knowledge base with additional fraud scenarios.
-- Enhance incident reporting and response recommendations.
-- Improve extraction accuracy and handling of incomplete user inputs.
-- Add further testing and validation across different incident types.
+| Problem | Possible Solution |
+|---|---|
+| Python not recognized | Install Python and add it to PATH |
+| Streamlit not recognized | Install dependencies using `pip install -r requirements.txt` |
+| Gemini API error | Verify the API key and `.env` configuration |
+| Missing modules | Reinstall dependencies |
+| Port already in use | Stop the other Streamlit process or use another port |
+| LLM extraction OFF | Check the Gemini API key and LLM configuration |
 
-## Disclaimer
+## 10. GitHub Repository
+
+Source code and project documentation:
+
+[UPI Fraud Responder – GitHub Repository](https://github.com/ananyaa08/UPI-Fraud-Responder)
+
+## 11. Disclaimer
 
 This application is intended for informational and educational assistance. It does not replace official banking, NPCI, or law-enforcement reporting channels.
 
 Users should contact their bank and appropriate official authorities to report suspected financial fraud. They should never share their UPI PIN, OTP, passwords, or other confidential credentials.
-
-
