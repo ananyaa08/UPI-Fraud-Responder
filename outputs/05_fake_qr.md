@@ -1,0 +1,23 @@
+# 05_fake_qr
+QR scam, multi-turn follow-up answers
+
+## USER
+Someone on OLX said he will pay me advance, sent a QR, I scanned it and Rs 12,000 was debited from my account
+
+## BOT
+I can only help with **UPI / online payment fraud** (money lost to a scam or unauthorised payment). What you describe is outside that, so I won't guess at the law. For other legal problems please contact a lawyer or your District Legal Services Authority (DLSA) / NALSA for free legal aid: https://nalsa.gov.in. If your problem *is* a payment scam, tell me what happened.
+
+## USER
+It was on 6/11/2026 at 2:15 pm, Paytm, Axis bank
+
+## BOT
+I can only help with **UPI / online payment fraud** (money lost to a scam or unauthorised payment). What you describe is outside that, so I won't guess at the law. For other legal problems please contact a lawyer or your District Legal Services Authority (DLSA) / NALSA for free legal aid: https://nalsa.gov.in. If your problem *is* a payment scam, tell me what happened.
+
+## USER
+UTR 509876543210 and he used suresh99@ybl
+
+## BOT
+I can only help with **UPI / online payment fraud** (money lost to a scam or unauthorised payment). What you describe is outside that, so I won't guess at the law. For other legal problems please contact a lawyer or your District Legal Services Authority (DLSA) / NALSA for free legal aid: https://nalsa.gov.in. If your problem *is* a payment scam, tell me what happened.
+
+## STATE
+category=generic_upi_fraud score=0.000 in_scope=False amount=None utr=None upi=None phone=None bank=None platform=None time=None
